@@ -4,12 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+import os
 
 # File paths
-bam_file = '/home/eblake/Documents/manta/working_manta/Data/Data_to_analysis/G15512.HCC1954.1.COST16011_region.bam'
-vcf_file = '/home/eblake/Documents/manta/working_manta/results/Data/candidateSV.vcf'
-expected_vcf_file = '/home/eblake/Documents/manta/working_manta/results/Data/somaticSV.vcf'  # Expected results VCF
-
+bam_file = '/home/eblake/Documents/manta/SV_finder_manta/Data/Data_to_analysis/G15512.HCC1954.1.COST16011_region.bam'
+vcf_file = '/home/eblake/Documents/manta/SV_finder_manta/results/Data/candidateSV.vcf'
+expected_vcf_file = '/home/eblake/Documents/manta/SV_finder_manta/results/Data/somaticSV.vcf'  # Expected results VCF
+save_graph_path = '/home/eblake/Documents/manta/SV_finder_manta/results/Graphs'
+save_data_path = '/home/eblake/Documents/manta/SV_finder_manta/results/Data'
 
 # Function to get read depth from a BAM file
 def get_read_depth(bam_path):
@@ -48,7 +50,7 @@ plt.xlabel('SV Type')
 plt.ylabel('Count')
 plt.title('Counts of Structural Variant Types from manta VCF')
 plt.xticks(rotation=45)
-plt.savefig('/home/eblake/Documents/manta/working_manta/results/Graphs/sv_counts_manta_vcf.png')
+plt.savefig(os.path.join(save_graph_path, 'sv_counts_manta_vcf.png'))
 #plt.show()
 
 # Plotting SV types for expected VCF
@@ -58,7 +60,7 @@ plt.xlabel('SV Type')
 plt.ylabel('Count')
 plt.title('Counts of Structural Variant Types in Expected Results VCF')
 plt.xticks(rotation=45)
-plt.savefig('/home/eblake/Documents/manta/working_manta/results/Graphs/sv_counts_expected_vcf.png')
+plt.savefig(os.path.join(save_graph_path, 'sv_counts_expected_vcf.png'))
 #plt.show()
 
 
@@ -68,7 +70,7 @@ plt.plot(read_depth_data, color='blue', linewidth=0.5)
 plt.xlabel('Genomic Position')
 plt.ylabel('Read Depth')
 plt.title('Read Depth Distribution of G15512.HCC1954.1.COST16011_region.bam')
-plt.savefig('/home/eblake/Documents/manta/working_manta/results/Graphs/read_depth_bam.png')
+plt.savefig(os.path.join(save_graph_path, 'read_depth_bam.png'))
 #plt.show()
 
 
@@ -79,12 +81,12 @@ expected_sv_counts_df = pd.DataFrame(list(expected_sv_counts.items()), columns=[
 read_depth_df = pd.DataFrame(read_depth_data, columns=['Read Depth'])
 
 # Save DataFrames to CSV (optional)
-sv_counts_df.to_csv('/home/eblake/Documents/manta/working_manta/results/Data/sv_counts_manta_vcf.csv', index=False)
-expected_sv_counts_df.to_csv('/home/eblake/Documents/manta/working_manta/results/Data/sv_counts_expected_vcf.csv', index=False)
-read_depth_df.to_csv('/home/eblake/Documents/manta/working_manta/results/Data/read_depth_bam.csv', index=False)
+sv_counts_df.to_csv(os.path.join(save_data_path, 'sv_counts_manta_vcf.csv'), index=False)
+expected_sv_counts_df.to_csv(os.path.join(save_data_path, 'sv_counts_expected_vcf.csv'), index=False)
+read_depth_df.to_csv(os.path.join(save_data_path, 'read_depth_bam.csv'), index=False)
 
 # Creating a PDF file
-pdf = canvas.Canvas("/home/eblake/Documents/manta/working_manta/results/Data/summary_report.pdf", pagesize=letter)
+pdf = canvas.Canvas(os.path.join(save_data_path, "summary_report.pdf"), pagesize=letter)
 width, height = letter
 
 # Constants for image sizing and positioning
@@ -94,15 +96,15 @@ margin = 50  # Margin from the bottom of the page
 
 # Adding text and images to PDF
 pdf.drawString(100, height - 40, "SV Counts Manta VCF")
-pdf.drawImage("/home/eblake/Documents/manta/working_manta/results/Graphs/sv_counts_manta_vcf.png", 100, height - margin - image_height, width=image_width, height=image_height)
+pdf.drawImage(os.path.join(save_graph_path, "sv_counts_manta_vcf.png"), 100, height - margin - image_height, width=image_width, height=image_height)
 
 pdf.showPage()
 pdf.drawString(100, height - 40, "SV Counts Expected VCF")
-pdf.drawImage("/home/eblake/Documents/manta/working_manta/results/Graphs/sv_counts_expected_vcf.png", 100, height - margin - image_height, width=image_width, height=image_height)
+pdf.drawImage(os.path.join(save_graph_path, "sv_counts_expected_vcf.png"), 100, height - margin - image_height, width=image_width, height=image_height)
 
 pdf.showPage()
 pdf.drawString(100, height - 40, "Read Depth Distribution")
-pdf.drawImage("/home/eblake/Documents/manta/working_manta/results/Graphs/read_depth_bam.png", 100, height - margin - image_height, width=image_width, height=image_height)
+pdf.drawImage(os.path.join(save_graph_path, "read_depth_bam.png"), 100, height - margin - image_height, width=image_width, height=image_height)
 
 # Save PDF
 pdf.save()

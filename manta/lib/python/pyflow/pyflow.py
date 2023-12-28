@@ -727,9 +727,9 @@ def writeDotGraph(taskInfoFile, taskStateFile, workflowClassName) :
     dotFp.write("// Task graph from pyflow object '%s'\n" % (workflowClassName))
     dotFp.write("// Process command: '%s'\n" % (cmdline()))
     dotFp.write("// Process working dir: '%s'\n" % (os.getcwd()))
-    dotFp.write("// Graph capture time: %s\n" % (timeStrNow()))
+    dotFp.write("// Graphs capture time: %s\n" % (timeStrNow()))
     dotFp.write("\n")
-    dotFp.write("digraph %s {\n" % (workflowClassName + "Graph"))
+    dotFp.write("digraph %s {\n" % (workflowClassName + "Graphs"))
     dotFp.write("\tcompound=true;\nrankdir=LR;\nnode[fontsize=10];\n")
     labelToSym = {}
     namespaceGraph = {}

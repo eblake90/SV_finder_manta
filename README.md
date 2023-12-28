@@ -89,10 +89,7 @@ Prepare the data in path:
 ```
 Decompress and move files using the follow:
 ```shell
-cd /home/eblake/Documents/manta/working_manta/manta/MantaWorkflow/results/variants
-gunzip -c candidateSV.vcf.gz > /home/eblake/Documents/manta/working_manta/results/Data/candidateSV.vcf
-gunzip -c candidateSmallIndels.vcf.gz > /home/eblake/Documents/manta/working_manta/results/Data/candidateSmallIndels.vcf
-gunzip -c diploidSV.vcf.gz > /home/eblake/Documents/manta/working_manta/results/Data/diploidSV.vcf
+ python /home/eblake/Documents/manta/SV_finder_manta/results/vcfgz_to_vcf.py
 ```
 ### Now comparing the manta SV findings with the expected results (if present):
 First go into /home/eblake/Documents/manta/working_manta/results/compareSV.py and change the paths relative to your .bam, results.vcf and expected_results.vcf files

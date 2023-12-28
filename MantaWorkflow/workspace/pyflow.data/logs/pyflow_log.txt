@@ -1,0 +1,255 @@
+[2023-12-28T13:47:03.186964Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Initiating pyFlow run
+[2023-12-28T13:47:03.188825Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] pyFlowClientWorkflowClass: MantaWorkflow
+[2023-12-28T13:47:03.190386Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] pyFlowVersion: 1.1.20
+[2023-12-28T13:47:03.191919Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] pythonVersion: 2.7.18.final.0
+[2023-12-28T13:47:03.193084Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] WorkingDir: '/home/eblake/Documents/manta/SV_finder_manta'
+[2023-12-28T13:47:03.193941Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] ProcessCmdLine: '/home/eblake/Documents/manta/SV_finder_manta/MantaWorkflow/runWorkflow.py'
+[2023-12-28T13:47:03.194861Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] mode: local
+[2023-12-28T13:47:03.195717Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] nCores: 8
+[2023-12-28T13:47:03.196558Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] memMb: 15689
+[2023-12-28T13:47:03.197429Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] dataDir: /home/eblake/Documents/manta/SV_finder_manta/MantaWorkflow/workspace/pyflow.data
+[2023-12-28T13:47:03.198348Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] isDryRun: False
+[2023-12-28T13:47:03.199252Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] isContinue: False
+[2023-12-28T13:47:03.200106Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] isForceContinue: True
+[2023-12-28T13:47:03.200925Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] [RunParameters] mailTo: ''
+[2023-12-28T13:47:03.202151Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:masterWorkflow] Starting task specification for master workflow
+[2023-12-28T13:47:03.203046Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [MantaWorkflow] Initiating Manta workflow version: 1.6.0
+[2023-12-28T13:47:03.204077Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getAlignmentStats_makeTmpDir' to master workflow
+[2023-12-28T13:47:03.205302Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getAlignmentStats_generateStats_000' to master workflow
+[2023-12-28T13:47:03.206349Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getAlignmentStats_makeTmpDir' from master workflow
+[2023-12-28T13:47:03.207263Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getAlignmentStats_mergeStats' to master workflow
+[2023-12-28T13:47:03.208667Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getAlignmentStats_removeTmpDir' to master workflow
+[2023-12-28T13:47:03.209599Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getAlignmentStats_makeTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.210544Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'summarizeStats' to master workflow
+[2023-12-28T13:47:03.211619Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_makeTmpDir' to master workflow
+[2023-12-28T13:47:03.212519Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_makeTmpDir' to master workflow
+[2023-12-28T13:47:03.213728Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_estimateChromDepth_000_8' to master workflow
+[2023-12-28T13:47:03.214565Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_makeTmpDir' from master workflow
+[2023-12-28T13:47:03.215478Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_estimateChromDepth_001_11' to master workflow
+[2023-12-28T13:47:03.217071Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_sample000_catChromDepth' to master workflow
+[2023-12-28T13:47:03.218075Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_makeTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.219070Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_mergeChromDepth' to master workflow
+[2023-12-28T13:47:03.220011Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'getChromDepth_removeTmpDir' to master workflow
+[2023-12-28T13:47:03.221110Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeGraphTmpDir' to master workflow
+[2023-12-28T13:47:03.222662Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0000' to master workflow
+[2023-12-28T13:47:03.223690Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0001' to master workflow
+[2023-12-28T13:47:03.224643Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0002' to master workflow
+[2023-12-28T13:47:03.225618Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0003' to master workflow
+[2023-12-28T13:47:03.227530Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0004' to master workflow
+[2023-12-28T13:47:03.228589Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0005' to master workflow
+[2023-12-28T13:47:03.230352Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0006' to master workflow
+[2023-12-28T13:47:03.231731Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0007' to master workflow
+[2023-12-28T13:47:03.233183Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0008' to master workflow
+[2023-12-28T13:47:03.235074Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0009' to master workflow
+[2023-12-28T13:47:03.238091Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0010' to master workflow
+[2023-12-28T13:47:03.240577Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getAlignmentStats_makeTmpDir' launched from master workflow
+[2023-12-28T13:47:03.242159Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0011' to master workflow
+[2023-12-28T13:47:03.243586Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getAlignmentStats_generateStats_000' from master workflow
+[2023-12-28T13:47:03.244995Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_000_8_0012' to master workflow
+[2023-12-28T13:47:03.246653Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0000' to master workflow
+[2023-12-28T13:47:03.247612Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getAlignmentStats_generateStats_000] Task initiated on local node
+[2023-12-28T13:47:03.248548Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_makeTmpDir' launched from master workflow
+[2023-12-28T13:47:03.249644Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0001' to master workflow
+[2023-12-28T13:47:03.250887Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0002' to master workflow
+[2023-12-28T13:47:03.251772Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_sample000_makeTmpDir' from master workflow
+[2023-12-28T13:47:03.252747Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0003' to master workflow
+[2023-12-28T13:47:03.254079Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_sample000_makeTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.255528Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0004' to master workflow
+[2023-12-28T13:47:03.256663Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0005' to master workflow
+[2023-12-28T13:47:03.257845Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0006' to master workflow
+[2023-12-28T13:47:03.259259Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0007' to master workflow
+[2023-12-28T13:47:03.260277Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0008' to master workflow
+[2023-12-28T13:47:03.261265Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0009' to master workflow
+[2023-12-28T13:47:03.262588Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0010' to master workflow
+[2023-12-28T13:47:03.263798Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeLocusGraph_chromId_001_11_0011' to master workflow
+[2023-12-28T13:47:03.265511Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding sub-workflow task 'mergeLocusGraphInputList' to master workflow
+[2023-12-28T13:47:03.268028Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'mergeLocusGraph' to master workflow
+[2023-12-28T13:47:03.269305Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'checkLocusGraph' to master workflow
+[2023-12-28T13:47:03.271394Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'removeTmpDir' to master workflow
+[2023-12-28T13:47:03.273420Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'locusGraphStats' to master workflow
+[2023-12-28T13:47:03.275154Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'makeHyGenDir' to master workflow
+[2023-12-28T13:47:03.277899Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'generateCandidateSV_0000' to master workflow
+[2023-12-28T13:47:03.279794Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'fixVcfHeader_sortCandidateSV' to master workflow
+[2023-12-28T13:47:03.281413Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding sub-workflow task 'sortCandidateSVInputList' to master workflow
+[2023-12-28T13:47:03.282416Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'sort_sortCandidateSV' to master workflow
+[2023-12-28T13:47:03.283443Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'tabix_sortCandidateSV' to master workflow
+[2023-12-28T13:47:03.284420Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_sample000_makeTmpDir' launched from master workflow
+[2023-12-28T13:47:03.285740Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'fixVcfHeader_sortDiploidSV' to master workflow
+[2023-12-28T13:47:03.286798Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding sub-workflow task 'sortDiploidSVInputList' to master workflow
+[2023-12-28T13:47:03.287982Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_sample000_estimateChromDepth_000_8' from master workflow
+[2023-12-28T13:47:03.289647Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'sort_sortDiploidSV' to master workflow
+[2023-12-28T13:47:03.291539Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_sample000_estimateChromDepth_001_11' from master workflow
+[2023-12-28T13:47:03.293101Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_sample000_estimateChromDepth_000_8] Task initiated on local node
+[2023-12-28T13:47:03.294451Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'tabix_sortDiploidSV' to master workflow
+[2023-12-28T13:47:03.296656Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_sample000_estimateChromDepth_001_11] Task initiated on local node
+[2023-12-28T13:47:03.297653Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'extractSmallIndels' to master workflow
+[2023-12-28T13:47:03.298635Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'extractSmallIndels_tabix' to master workflow
+[2023-12-28T13:47:03.299741Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding sub-workflow task 'sortEdgeRuntimeLogsInputList' to master workflow
+[2023-12-28T13:47:03.301908Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Adding command task 'sortEdgeRuntimeLogs' to master workflow
+[2023-12-28T13:47:03.303395Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:masterWorkflow] Finished task specification for master workflow
+[2023-12-28T13:47:03.320363Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getAlignmentStats_generateStats_000' launched from master workflow
+[2023-12-28T13:47:03.322094Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getAlignmentStats_mergeStats' from master workflow
+[2023-12-28T13:47:03.324721Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getAlignmentStats_mergeStats] Task initiated on local node
+[2023-12-28T13:47:03.326358Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_sample000_estimateChromDepth_001_11' launched from master workflow
+[2023-12-28T13:47:03.330935Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_sample000_estimateChromDepth_000_8' launched from master workflow
+[2023-12-28T13:47:03.332356Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_sample000_catChromDepth' from master workflow
+[2023-12-28T13:47:03.334724Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_sample000_catChromDepth] Task initiated on local node
+[2023-12-28T13:47:03.364862Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getAlignmentStats_mergeStats' launched from master workflow
+[2023-12-28T13:47:03.367038Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'summarizeStats' from master workflow
+[2023-12-28T13:47:03.368802Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getAlignmentStats_removeTmpDir' from master workflow
+[2023-12-28T13:47:03.370708Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:summarizeStats] Task initiated on local node
+[2023-12-28T13:47:03.372158Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getAlignmentStats_removeTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.373020Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_sample000_catChromDepth' launched from master workflow
+[2023-12-28T13:47:03.374554Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_mergeChromDepth' from master workflow
+[2023-12-28T13:47:03.376885Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_mergeChromDepth] Task initiated on local node
+[2023-12-28T13:47:03.407051Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'summarizeStats' launched from master workflow
+[2023-12-28T13:47:03.407941Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getAlignmentStats_removeTmpDir' launched from master workflow
+[2023-12-28T13:47:03.416569Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_mergeChromDepth' launched from master workflow
+[2023-12-28T13:47:03.418066Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeGraphTmpDir' from master workflow
+[2023-12-28T13:47:03.419144Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'getChromDepth_removeTmpDir' from master workflow
+[2023-12-28T13:47:03.420605Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeGraphTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.421795Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:getChromDepth_removeTmpDir] Task initiated on local node
+[2023-12-28T13:47:03.451910Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeGraphTmpDir' launched from master workflow
+[2023-12-28T13:47:03.452930Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'getChromDepth_removeTmpDir' launched from master workflow
+[2023-12-28T13:47:03.454673Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0006' from master workflow
+[2023-12-28T13:47:03.456444Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0004' from master workflow
+[2023-12-28T13:47:03.458108Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0006] Task initiated on local node
+[2023-12-28T13:47:03.459746Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0010' from master workflow
+[2023-12-28T13:47:03.461093Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0004] Task initiated on local node
+[2023-12-28T13:47:03.462125Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0006' from master workflow
+[2023-12-28T13:47:03.463099Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0010] Task initiated on local node
+[2023-12-28T13:47:03.464181Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0007' from master workflow
+[2023-12-28T13:47:03.465206Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0006] Task initiated on local node
+[2023-12-28T13:47:03.466439Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0004' from master workflow
+[2023-12-28T13:47:03.467509Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0007] Task initiated on local node
+[2023-12-28T13:47:03.468938Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0001' from master workflow
+[2023-12-28T13:47:03.470684Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0004] Task initiated on local node
+[2023-12-28T13:47:03.472397Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0000' from master workflow
+[2023-12-28T13:47:03.473716Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0001] Task initiated on local node
+[2023-12-28T13:47:03.475854Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0000] Task initiated on local node
+[2023-12-28T13:47:04.037943Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0006' launched from master workflow
+[2023-12-28T13:47:04.039431Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0004' launched from master workflow
+[2023-12-28T13:47:04.041631Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0006' launched from master workflow
+[2023-12-28T13:47:04.045317Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0005' from master workflow
+[2023-12-28T13:47:04.046828Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0003' from master workflow
+[2023-12-28T13:47:04.048750Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0005] Task initiated on local node
+[2023-12-28T13:47:04.049998Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0002' from master workflow
+[2023-12-28T13:47:04.051628Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0003] Task initiated on local node
+[2023-12-28T13:47:04.053316Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0002] Task initiated on local node
+[2023-12-28T13:47:04.054675Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0000' launched from master workflow
+[2023-12-28T13:47:04.055598Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0010' launched from master workflow
+[2023-12-28T13:47:04.056490Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0004' launched from master workflow
+[2023-12-28T13:47:04.057389Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0001' launched from master workflow
+[2023-12-28T13:47:04.059061Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0008' from master workflow
+[2023-12-28T13:47:04.060135Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0010' from master workflow
+[2023-12-28T13:47:04.064092Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0009' from master workflow
+[2023-12-28T13:47:04.065278Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0008] Task initiated on local node
+[2023-12-28T13:47:04.066793Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0007' from master workflow
+[2023-12-28T13:47:04.067765Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0010] Task initiated on local node
+[2023-12-28T13:47:04.069613Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0009] Task initiated on local node
+[2023-12-28T13:47:04.070767Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0007] Task initiated on local node
+[2023-12-28T13:47:04.071691Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0007' launched from master workflow
+[2023-12-28T13:47:04.073410Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0012' from master workflow
+[2023-12-28T13:47:04.085353Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0012] Task initiated on local node
+[2023-12-28T13:47:04.645839Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0005' launched from master workflow
+[2023-12-28T13:47:04.647258Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0002' launched from master workflow
+[2023-12-28T13:47:04.648748Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0003' launched from master workflow
+[2023-12-28T13:47:04.649685Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0008' launched from master workflow
+[2023-12-28T13:47:04.651798Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0011' from master workflow
+[2023-12-28T13:47:04.653005Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0001' from master workflow
+[2023-12-28T13:47:04.654553Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0011] Task initiated on local node
+[2023-12-28T13:47:04.656178Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0008' from master workflow
+[2023-12-28T13:47:04.657363Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0001] Task initiated on local node
+[2023-12-28T13:47:04.658490Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0003' from master workflow
+[2023-12-28T13:47:04.659652Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0008] Task initiated on local node
+[2023-12-28T13:47:04.661489Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0009' launched from master workflow
+[2023-12-28T13:47:04.665728Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0012' launched from master workflow
+[2023-12-28T13:47:04.666754Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0003] Task initiated on local node
+[2023-12-28T13:47:04.667780Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0010' launched from master workflow
+[2023-12-28T13:47:04.669485Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0011' from master workflow
+[2023-12-28T13:47:04.670560Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0002' from master workflow
+[2023-12-28T13:47:04.672438Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0011] Task initiated on local node
+[2023-12-28T13:47:04.673578Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0009' from master workflow
+[2023-12-28T13:47:04.675041Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0002] Task initiated on local node
+[2023-12-28T13:47:04.676630Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0007' launched from master workflow
+[2023-12-28T13:47:04.679053Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0009] Task initiated on local node
+[2023-12-28T13:47:04.681071Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_001_11_0005' from master workflow
+[2023-12-28T13:47:04.693328Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_001_11_0005] Task initiated on local node
+[2023-12-28T13:47:05.255557Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0011' launched from master workflow
+[2023-12-28T13:47:05.257176Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0001' launched from master workflow
+[2023-12-28T13:47:05.258690Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0008' launched from master workflow
+[2023-12-28T13:47:05.260193Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0003' launched from master workflow
+[2023-12-28T13:47:05.261768Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0009' launched from master workflow
+[2023-12-28T13:47:05.262669Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0011' launched from master workflow
+[2023-12-28T13:47:05.263514Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0002' launched from master workflow
+[2023-12-28T13:47:05.265542Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeLocusGraph_chromId_000_8_0000' from master workflow
+[2023-12-28T13:47:05.269262Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeLocusGraph_chromId_000_8_0000] Task initiated on local node
+[2023-12-28T13:47:05.299311Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_001_11_0005' launched from master workflow
+[2023-12-28T13:47:05.614699Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeLocusGraph_chromId_000_8_0000' launched from master workflow
+[2023-12-28T13:47:05.616910Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching sub-workflow task: 'mergeLocusGraphInputList' from master workflow
+[2023-12-28T13:47:05.618308Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:mergeLocusGraphInputList] Starting task specification for sub-workflow
+[2023-12-28T13:47:05.619692Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:mergeLocusGraphInputList] Finished task specification for sub-workflow
+[2023-12-28T13:47:05.622877Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed sub-workflow task: 'mergeLocusGraphInputList' launched from master workflow
+[2023-12-28T13:47:05.624728Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'mergeLocusGraph' from master workflow
+[2023-12-28T13:47:05.629085Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:mergeLocusGraph] Task initiated on local node
+[2023-12-28T13:47:05.690207Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'mergeLocusGraph' launched from master workflow
+[2023-12-28T13:47:05.692171Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'checkLocusGraph' from master workflow
+[2023-12-28T13:47:05.693968Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'removeTmpDir' from master workflow
+[2023-12-28T13:47:05.696930Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'locusGraphStats' from master workflow
+[2023-12-28T13:47:05.699025Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:checkLocusGraph] Task initiated on local node
+[2023-12-28T13:47:05.701248Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:removeTmpDir] Task initiated on local node
+[2023-12-28T13:47:05.702527Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:locusGraphStats] Task initiated on local node
+[2023-12-28T13:47:05.763638Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'checkLocusGraph' launched from master workflow
+[2023-12-28T13:47:05.765470Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'removeTmpDir' launched from master workflow
+[2023-12-28T13:47:05.766702Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'locusGraphStats' launched from master workflow
+[2023-12-28T13:47:05.768510Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'makeHyGenDir' from master workflow
+[2023-12-28T13:47:05.772986Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:makeHyGenDir] Task initiated on local node
+[2023-12-28T13:47:05.833909Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'makeHyGenDir' launched from master workflow
+[2023-12-28T13:47:05.835779Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'generateCandidateSV_0000' from master workflow
+[2023-12-28T13:47:05.840444Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:generateCandidateSV_0000] Task initiated on local node
+[2023-12-28T13:47:06.001622Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'generateCandidateSV_0000' launched from master workflow
+[2023-12-28T13:47:06.002912Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching sub-workflow task: 'sortEdgeRuntimeLogsInputList' from master workflow
+[2023-12-28T13:47:06.003949Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortEdgeRuntimeLogsInputList] Starting task specification for sub-workflow
+[2023-12-28T13:47:06.005108Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'fixVcfHeader_sortCandidateSV' from master workflow
+[2023-12-28T13:47:06.006157Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortEdgeRuntimeLogsInputList] Finished task specification for sub-workflow
+[2023-12-28T13:47:06.007838Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'fixVcfHeader_sortDiploidSV' from master workflow
+[2023-12-28T13:47:06.009115Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:fixVcfHeader_sortCandidateSV] Task initiated on local node
+[2023-12-28T13:47:06.010743Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed sub-workflow task: 'sortEdgeRuntimeLogsInputList' launched from master workflow
+[2023-12-28T13:47:06.011900Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:fixVcfHeader_sortDiploidSV] Task initiated on local node
+[2023-12-28T13:47:06.013243Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'sortEdgeRuntimeLogs' from master workflow
+[2023-12-28T13:47:06.015876Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortEdgeRuntimeLogs] Task initiated on local node
+[2023-12-28T13:47:06.045939Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'fixVcfHeader_sortCandidateSV' launched from master workflow
+[2023-12-28T13:47:06.047759Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'fixVcfHeader_sortDiploidSV' launched from master workflow
+[2023-12-28T13:47:06.049580Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching sub-workflow task: 'sortCandidateSVInputList' from master workflow
+[2023-12-28T13:47:06.050543Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortCandidateSVInputList] Starting task specification for sub-workflow
+[2023-12-28T13:47:06.051528Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching sub-workflow task: 'sortDiploidSVInputList' from master workflow
+[2023-12-28T13:47:06.052520Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortCandidateSVInputList] Finished task specification for sub-workflow
+[2023-12-28T13:47:06.053602Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortDiploidSVInputList] Starting task specification for sub-workflow
+[2023-12-28T13:47:06.054589Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed sub-workflow task: 'sortCandidateSVInputList' launched from master workflow
+[2023-12-28T13:47:06.055474Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sortDiploidSVInputList] Finished task specification for sub-workflow
+[2023-12-28T13:47:06.056343Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'sortEdgeRuntimeLogs' launched from master workflow
+[2023-12-28T13:47:06.057370Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'sort_sortCandidateSV' from master workflow
+[2023-12-28T13:47:06.058413Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed sub-workflow task: 'sortDiploidSVInputList' launched from master workflow
+[2023-12-28T13:47:06.059693Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'sort_sortDiploidSV' from master workflow
+[2023-12-28T13:47:06.060621Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sort_sortCandidateSV] Task initiated on local node
+[2023-12-28T13:47:06.061983Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:sort_sortDiploidSV] Task initiated on local node
+[2023-12-28T13:47:06.124395Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'sort_sortDiploidSV' launched from master workflow
+[2023-12-28T13:47:06.125359Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'sort_sortCandidateSV' launched from master workflow
+[2023-12-28T13:47:06.126503Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'tabix_sortDiploidSV' from master workflow
+[2023-12-28T13:47:06.127637Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'extractSmallIndels' from master workflow
+[2023-12-28T13:47:06.129070Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'tabix_sortCandidateSV' from master workflow
+[2023-12-28T13:47:06.130353Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:tabix_sortDiploidSV] Task initiated on local node
+[2023-12-28T13:47:06.131609Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:extractSmallIndels] Task initiated on local node
+[2023-12-28T13:47:06.132610Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:tabix_sortCandidateSV] Task initiated on local node
+[2023-12-28T13:47:06.194286Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'extractSmallIndels' launched from master workflow
+[2023-12-28T13:47:06.195254Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'tabix_sortDiploidSV' launched from master workflow
+[2023-12-28T13:47:06.196236Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'tabix_sortCandidateSV' launched from master workflow
+[2023-12-28T13:47:06.197285Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Launching command task: 'extractSmallIndels_tabix' from master workflow
+[2023-12-28T13:47:06.199800Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskRunner:extractSmallIndels_tabix] Task initiated on local node
+[2023-12-28T13:47:06.230086Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [TaskManager] Completed command task: 'extractSmallIndels_tabix' launched from master workflow
+[2023-12-28T13:47:08.907296Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Manta workflow successfully completed.
+[2023-12-28T13:47:08.907296Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] 
+[2023-12-28T13:47:08.907296Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] 	workflow version: 1.6.0
+[2023-12-28T13:47:08.908548Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] 
+[2023-12-28T13:47:08.909592Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Workflow successfully completed all tasks
+[2023-12-28T13:47:08.910602Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [WorkflowRunner] Elapsed time for full workflow: 5 sec

@@ -1,0 +1,4 @@
+[2023-12-28T13:47:03.430693Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeGraphTmpDir] [wrapperSignal] wrapperStart
+[2023-12-28T13:47:03.435314Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeGraphTmpDir] [wrapperSignal] taskStart
+[2023-12-28T13:47:03.437496Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeGraphTmpDir] [wrapperSignal] taskExitCode 0
+[2023-12-28T13:47:03.439995Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeGraphTmpDir] [wrapperSignal] taskElapsedSec 0

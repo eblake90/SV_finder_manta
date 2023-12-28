@@ -1,6 +1,4 @@
 import subprocess
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
 import os
 
 def run_samplot(vcf_path, bam_path, output_dir, tag):
@@ -37,10 +35,10 @@ def run_samplot(vcf_path, bam_path, output_dir, tag):
             subprocess.run(cmd, check=True)
 
 # Define paths
-candidate_vcf_path = "/home/eblake/Documents/manta/working_manta/results/Data/candidateSV.vcf"
-somatic_vcf_path = "/home/eblake/Documents/manta/working_manta/results/Data/somaticSV.vcf"
-bam_path = "/home/eblake/Documents/manta/working_manta/Data/Data_to_analysis/G15512.HCC1954.1.COST16011_region.bam"
-output_dir = "/home/eblake/Documents/manta/working_manta/results/Data/samplot_output"
+candidate_vcf_path = "/home/eblake/Documents/manta/SV_finder_manta/results/Data/candidateSV.vcf"
+somatic_vcf_path = "/home/eblake/Documents/manta/SV_finder_manta/results/Data/somaticSV.vcf"
+bam_path = "/home/eblake/Documents/manta/SV_finder_manta/Data/Data_to_analysis/G15512.HCC1954.1.COST16011_region.bam"
+output_dir = "/home/eblake/Documents/manta/SV_finder_manta/results/Data/samplot_output"
 
 # Run for both VCF files
 run_samplot(candidate_vcf_path, bam_path, output_dir, "candidate")

@@ -1,0 +1,4 @@
+[2023-12-28T13:47:06.141950Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:extractSmallIndels] [wrapperSignal] wrapperStart
+[2023-12-28T13:47:06.146355Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:extractSmallIndels] [wrapperSignal] taskStart
+[2023-12-28T13:47:06.161225Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:extractSmallIndels] [wrapperSignal] taskExitCode 0
+[2023-12-28T13:47:06.164075Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:extractSmallIndels] [wrapperSignal] taskElapsedSec 0
