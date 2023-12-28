@@ -1,4 +1,4 @@
-# BiogeMT Boot camp task
+# SV Finder using Manta
 
 
 <!-- ABOUT THE PROJECT -->
