@@ -1,4 +1,0 @@
-[2023-12-28T13:47:06.025589Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sortEdgeRuntimeLogs] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:06.029984Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sortEdgeRuntimeLogs] [wrapperSignal] taskStart
-[2023-12-28T13:47:06.041415Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sortEdgeRuntimeLogs] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:06.045139Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sortEdgeRuntimeLogs] [wrapperSignal] taskElapsedSec 0

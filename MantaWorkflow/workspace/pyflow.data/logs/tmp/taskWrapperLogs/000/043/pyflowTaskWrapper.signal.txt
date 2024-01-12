@@ -1,4 +1,0 @@
-[2023-12-28T13:47:05.790198Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeHyGenDir] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:05.794388Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeHyGenDir] [wrapperSignal] taskStart
-[2023-12-28T13:47:05.796690Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeHyGenDir] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:05.798608Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:makeHyGenDir] [wrapperSignal] taskElapsedSec 0

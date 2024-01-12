@@ -1,4 +1,0 @@
-[2023-12-28T13:47:03.388875Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:03.393306Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] [wrapperSignal] taskStart
-[2023-12-28T13:47:03.408046Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:03.410506Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] [wrapperSignal] taskElapsedSec 0

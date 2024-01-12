@@ -1,4 +1,0 @@
-[2023-12-28T13:47:06.072832Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:06.076819Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskStart
-[2023-12-28T13:47:06.101146Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:06.102813Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskElapsedSec 0

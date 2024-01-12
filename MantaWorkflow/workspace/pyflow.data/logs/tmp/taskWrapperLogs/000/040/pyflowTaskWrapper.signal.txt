@@ -1,4 +1,0 @@
-[2023-12-28T13:47:05.717258Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:05.721497Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskStart
-[2023-12-28T13:47:05.735186Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:05.737780Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskElapsedSec 0

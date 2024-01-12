@@ -1,4 +1,0 @@
-[2023-12-28T13:47:03.227933Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:03.234359Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] [wrapperSignal] taskStart
-[2023-12-28T13:47:03.237699Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:03.241104Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] [wrapperSignal] taskElapsedSec 0

@@ -1,1 +1,0 @@
-/home/eblake/Documents/manta/SV_finder_manta/MantaWorkflow/workspace/svHyGen/candidateSV.0000.vcf

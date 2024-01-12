@@ -1,4 +1,0 @@
-[2023-12-28T13:47:03.335692Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getAlignmentStats_mergeStats] [wrapperSignal] wrapperStart
-[2023-12-28T13:47:03.341102Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getAlignmentStats_mergeStats] [wrapperSignal] taskStart
-[2023-12-28T13:47:03.350260Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getAlignmentStats_mergeStats] [wrapperSignal] taskExitCode 0
-[2023-12-28T13:47:03.352428Z] [eva-ThinkPad-E14-Gen-2] [13158_1] [pyflowTaskWrapper:getAlignmentStats_mergeStats] [wrapperSignal] taskElapsedSec 0
