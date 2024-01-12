@@ -41,4 +41,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_samplot(args.vcf, args.bam, args.output, "output")
-i have a .txt file and a .vcf file. the .txt file (see example) is composed of expected sturcatural variance examples, while the .vcf file is made of the output from manta. i want you to create a python script that i can put in a --vcf and --txt argument and it will --output a comparison of the 2. the comparison should involve, linking which structural variant most closely match any of the expected results (with a percentage of how closely it matches the result sequence) and list all the sequences that are most likely not found in the expected results (hence being wrong)
